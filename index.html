@@ -8,10 +8,16 @@
 </head>
 <body>
   <div class="screen">
-    <div class="status-bar">🔋 100%  |  📶 VXLNet  |  🕒 12:00</div>
+    <div class="status-bar">
+      🔋 <span id="battery">...</span> |
+      📶 <span id="connection">...</span> |
+      🕒 <span id="time">...</span>
+    </div>
     <div class="home">
-      <h1>Welcome to VXLPhoneOS</h1>
+      <h1>VXLPhoneOS</h1>
       <button onclick="checkUpdate()">Check for Update</button>
+      <button onclick="openCamera()">Open Camera</button>
+      <video id="camera" autoplay playsinline width="100%" style="margin-top: 10px;"></video>
     </div>
   </div>
   <script src="script.js"></script>
